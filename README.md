@@ -1,1 +1,1 @@
-A portfolio showcasing my projects and contact information
+Static website for the leftist student organization PrSF (Progressive Students Federation)
