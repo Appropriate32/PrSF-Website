@@ -90,11 +90,11 @@
         >RESOURCES</a
       >
     </div>
-    <main class="p-6 md:p-12">
+    <main class="flex flex-col items-center justify-center p-6 md:p-12">
       <section
-        class="bg-prsf-crimson text-prsf text-prsf-yellow border-4 border-black p-8 shadow-[8px_8px_0px_rgba(0,0,0,1)] md:p-16"
+        class="bg-prsf-crimson text-prsf-yellow w-full border-4 border-black p-8 shadow-[8px_8px_0px_rgba(0,0,0,1)] md:p-16"
       >
-        <h1 class="mb-6 text-6xl leading-none font-black uppercase md:text-8xl">
+        <h1 class="mb-6 text-5xl leading-none font-black uppercase md:text-8xl">
           Educate.<br />Agitate.<br />Organize.
         </h1>
 
@@ -110,6 +110,203 @@
           JOIN THE MOVEMENT
         </a>
       </section>
+      <section class="mx-auto max-w-5xl px-6 py-16 md:py-24">
+        <h1
+          class="text-ink mb-8 border-b-4 pb-4 text-4xl font-bold uppercase md:text-5xl"
+        >
+          WHO WE ARE
+        </h1>
+        <div
+          class="flex flex-col text-xl leading-relaxed text-black md:columns-2 md:flex-row md:gap-12 md:text-2xl"
+        >
+          <p class="mb-6 break-inside-avoid">
+            We are dedicated to giving Truffle treats. If our lord Truffle does
+            not get treats, phir inqalab kese aayei ga?
+          </p>
+          <p class="mb-6 break-inside-avoid">
+            That is right, inqalab siraf aayei ga AGAR Truffle bhi aayei ga. All
+            Hail Truffle our lord and prophet. Our messenger.
+          </p>
+        </div>
+      </section>
+      <section class="mx-auto mb-24 max-w-5xl px-6">
+        <h2
+          class="mb-12 border-b-4 border-black pb-4 text-4xl font-black text-black uppercase md:text-5xl"
+        >
+          Leadership
+        </h2>
+
+        <div
+          class="flex flex-col border-4 border-black bg-[#7A1014] text-[#EFEBE4] shadow-[8px_8px_0px_rgba(0,0,0,1)] md:flex-row"
+        >
+          <div
+            class="relative z-[60] aspect-square w-full overflow-hidden border-b-4 border-black md:aspect-auto md:w-1/2 md:border-r-4 md:border-b-0"
+          >
+            <img
+              src="./images/truffle.jpeg"
+              alt="Leadership Photo"
+              class="h-full w-full object-cover contrast-125 saturate-50"
+            />
+          </div>
+
+          <div class="flex w-full flex-col justify-center p-8 md:w-1/2 md:p-12">
+            <h3
+              class="mb-2 text-5xl font-black text-[#FFC000] uppercase md:text-6xl"
+            >
+              Truffle
+            </h3>
+            <p
+              class="mb-6 inline-block self-start border-b-2 border-[#FFC000] pb-4 text-2xl font-bold tracking-widest uppercase md:text-3xl"
+            >
+              General Secretary
+            </p>
+            <p class="text-xl leading-relaxed italic md:text-2xl">
+              "Inqalab kha jaun ga. All hail the treat jar."
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
+          <div
+            class="z-60 flex flex-col border-4 border-black bg-[#EFEBE4] shadow-[4px_4px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-1 hover:shadow-[6px_6px_0px_rgba(0,0,0,1)]"
+          >
+            <div
+              class="relative aspect-square overflow-hidden border-b-4 border-black bg-[#FFC000]"
+            >
+              <img src="./images/mohsin.jpg" alt="" />
+            </div>
+            <div class="p-6 text-center text-black">
+              <h4 class="mb-1 text-3xl font-black uppercase">
+                Kid named Mohsin
+              </h4>
+              <p class="text-xl font-bold text-[#7A1014]">John Punjab</p>
+            </div>
+          </div>
+
+          <div
+            class="z-60 flex flex-col border-4 border-black bg-[#EFEBE4] shadow-[4px_4px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-1 hover:shadow-[6px_6px_0px_rgba(0,0,0,1)]"
+          >
+            <div
+              class="relative aspect-square overflow-hidden border-b-4 border-black bg-[#FFC000]"
+            >
+              <img
+                src="./images/l.jfif"
+                alt=""
+                class="h-full w-full object-cover contrast-125 saturate-50"
+              />
+            </div>
+            <div class="p-6 text-center text-black">
+              <h4 class="mb-1 text-3xl font-black uppercase">Hafsa</h4>
+              <p class="text-xl font-bold text-[#7A1014]">
+                Study Circle Coordinator
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="z-60 flex flex-col border-4 border-black bg-[#EFEBE4] shadow-[4px_4px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-1 hover:shadow-[6px_6px_0px_rgba(0,0,0,1)]"
+          >
+            <div
+              class="relative aspect-square overflow-hidden border-b-4 border-black bg-[#FFC000]"
+            >
+              <img
+                src="./images/mamdani.jpeg"
+                alt=""
+                class="h-full w-full object-cover contrast-125 saturate-50"
+              />
+            </div>
+            <div class="p-6 text-center text-black">
+              <h4 class="mb-1 text-3xl font-black uppercase">Taha</h4>
+              <p class="text-xl font-bold text-[#7A1014]">Media & Outreach</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- FOOTER: Thick top border, crimson background, sits above the noise if needed -->
+    <footer
+      class="relative z-[60] border-t-8 border-black bg-[#7A1014] pt-16 pb-8 text-[#EFEBE4]"
+    >
+      <div class="mx-auto max-w-5xl px-6">
+        <!-- Top bold statement to keep the energy high -->
+        <h2
+          class="mb-12 border-b-4 border-black pb-6 text-4xl font-black text-[#FFC000] uppercase md:text-6xl"
+        >
+          Solidarity Forever.
+        </h2>
+
+        <!-- 3-Column Grid for Content -->
+        <div class="mb-12 grid grid-cols-1 gap-12 md:grid-cols-3">
+          <!-- Column 1: Brand & Mission -->
+          <div class="flex flex-col items-start">
+            <a
+              href="#"
+              class="font-oswald mb-6 border-2 border-black bg-[#E60000] px-4 py-1 text-4xl font-bold text-white normal-case shadow-[4px_4px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)]"
+            >
+              PrSF
+            </a>
+            <p class="text-xl leading-relaxed italic">
+              Progressive Students Federation.<br />Educate, Agitate, Organize.
+            </p>
+          </div>
+
+          <!-- Column 2: Directory / Links -->
+          <div class="flex flex-col items-start gap-4">
+            <h3 class="text-2xl font-black text-[#FFC000] uppercase">
+              Directory
+            </h3>
+            <!-- Brutalist hover effects for the links -->
+            <a
+              href="index.html"
+              class="border-b-2 border-transparent text-xl font-bold uppercase transition-none hover:border-[#FFC000] hover:text-[#FFC000]"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="border-b-2 border-transparent text-xl font-bold uppercase transition-none hover:border-[#FFC000] hover:text-[#FFC000]"
+              >About Us</a
+            >
+            <a
+              href="events.html"
+              class="border-b-2 border-transparent text-xl font-bold uppercase transition-none hover:border-[#FFC000] hover:text-[#FFC000]"
+              >Events</a
+            >
+            <a
+              href="resources.html"
+              class="border-b-2 border-transparent text-xl font-bold uppercase transition-none hover:border-[#FFC000] hover:text-[#FFC000]"
+              >Resources</a
+            >
+          </div>
+
+          <!-- Column 3: Contact & Social -->
+          <div class="flex flex-col items-start gap-4">
+            <h3 class="text-2xl font-black text-[#FFC000] uppercase">
+              Connect
+            </h3>
+            <p class="text-xl">Lahore, Pakistan</p>
+
+            <!-- Big chunky social button -->
+            <a
+              href="#"
+              class="mt-2 inline-block border-2 border-black bg-[#FFC000] px-6 py-2 text-xl font-bold text-black uppercase shadow-[4px_4px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)]"
+            >
+              Instagram
+            </a>
+          </div>
+        </div>
+
+        <!-- Bottom Copyright / Sign-off -->
+        <div
+          class="flex flex-col items-center justify-between gap-4 border-t-4 border-black pt-6 text-center md:flex-row md:text-left"
+        >
+          <p class="text-lg font-bold uppercase">
+            © 2026 Progressive Students Federation
+          </p>
+          <p class="text-lg font-bold text-[#FFC000] italic">
+            Power to the Students
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

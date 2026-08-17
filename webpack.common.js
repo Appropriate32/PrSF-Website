@@ -41,6 +41,18 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader", "postcss-loader"],
       },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+        generator: {
+          // This outputs your images into a 'dist/images' folder with their original extension
+          filename: "images/[name][hash][ext][query]",
+        },
+      },
     ],
   },
 };
