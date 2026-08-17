@@ -1,2 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stalinist+One&display=swap");
 @import "tailwindcss";
 
+@theme {
+  --font-merriweather: "Merriweather", serif;
+  --color-prsf-crimson: #7a1014;
+  --color-prsf-yellow: #ffc000;
+  --color-prsf-blue: #3a4b5c;
+  --color-paper: #efebe4;
+  --color-ink: #1a1a1a;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-merriweather);
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+  }
+
+  *,
+  ::before,
+  ::after {
+    border-color: var(--color-ink);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a {
+    font-family: var(--font-merriweather);
+  }
+
+  header a {
+    font-size: 25px;
+  }
+}
+
+@layer utilities {
+  .bg-noise {
+    background-image: url("./images/noisy-background.jpg");
+    background-repeat: repeat;
+    mix-blend-mode: multiply;
+    opacity: 0.4;
+    pointer-events: none;
+  }
+}
