@@ -92,23 +92,36 @@
     </div>
     <main class="flex flex-col items-center justify-center p-6 md:p-12">
       <section
-        class="bg-prsf-crimson text-prsf-yellow w-full border-4 border-black p-8 shadow-[8px_8px_0px_rgba(0,0,0,1)] md:p-16"
+        class="bg-prsf-crimson text-prsf-yellow relative flex min-h-[600px] w-full flex-col justify-center overflow-hidden border-4 border-black px-8 py-12 shadow-[8px_8px_0px_rgba(0,0,0,1)] md:px-16 lg:min-h-[70vh]"
       >
-        <h1 class="mb-6 text-5xl leading-none font-black uppercase md:text-8xl">
-          Educate.<br />Agitate.<br />Organize.
-        </h1>
+        <div class="relative z-10 w-full lg:w-3/5">
+          <h1
+            class="mb-6 text-5xl leading-none font-black uppercase md:text-8xl"
+          >
+            Educate.<br />Agitate.<br />Organize.
+          </h1>
 
-        <p class="mb-8 max-w-2xl text-2xl text-white md:text-3xl">
-          Building solidarity and fighting for student rights in the era of
-          hyper-imperialism.
-        </p>
+          <p class="mb-8 max-w-2xl text-2xl text-white md:text-3xl">
+            Building solidarity and fighting for student rights in the era of
+            hyper-imperialism.
+          </p>
 
-        <a
-          href="#"
-          class="bg-prsf-yellow inline-block border-2 px-6 py-3 text-2xl font-bold text-black shadow-[4px_4px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)]"
+          <a
+            href="#"
+            class="bg-prsf-yellow inline-block border-2 px-6 py-3 text-2xl font-bold text-black shadow-[4px_4px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)]"
+          >
+            JOIN THE MOVEMENT
+          </a>
+        </div>
+        <div
+          class="pointer-events-none absolute right-0 bottom-0 hidden h-full items-end justify-end lg:flex"
         >
-          JOIN THE MOVEMENT
-        </a>
+          <img
+            src="./images/Che.png"
+            alt="Che"
+            class="h-full max-h-none w-auto [mask-image:radial-gradient(45%_90%_at_50%_10%,black_30%,transparent_100%)] object-contain object-bottom mix-blend-multiply brightness-125 contrast-150 grayscale [-webkit-mask-image:radial-gradient(45%_90%_at_50%_10%,black_30%,transparent_100%)]"
+          />
+        </div>
       </section>
       <section class="mx-auto max-w-5xl px-6 py-16 md:py-24">
         <h1
@@ -223,84 +236,58 @@
         </div>
       </section>
     </main>
-    <!-- FOOTER: Thick top border, crimson background, sits above the noise if needed -->
     <footer
-      class="relative z-[60] border-t-8 border-black bg-[#7A1014] pt-16 pb-8 text-[#EFEBE4]"
+      class="relative z-[60] overflow-hidden border-t-8 border-black bg-[#7A1014] pt-16 pb-8 text-[#EFEBE4]"
     >
-      <div class="mx-auto max-w-5xl px-6">
-        <!-- Top bold statement to keep the energy high -->
-        <h2
-          class="mb-12 border-b-4 border-black pb-6 text-4xl font-black text-[#FFC000] uppercase md:text-6xl"
+      <div class="relative mx-auto max-w-5xl px-6">
+        <div
+          class="pointer-events-none absolute top-0 right-0 -z-10 -translate-y-12 text-[250px] leading-none text-[#630D10] select-none md:translate-x-12 md:text-[350px]"
         >
-          Solidarity Forever.
-        </h2>
+          ★
+        </div>
 
-        <!-- 3-Column Grid for Content -->
-        <div class="mb-12 grid grid-cols-1 gap-12 md:grid-cols-3">
-          <!-- Column 1: Brand & Mission -->
-          <div class="flex flex-col items-start">
-            <a
-              href="#"
-              class="font-oswald mb-6 border-2 border-black bg-[#E60000] px-4 py-1 text-4xl font-bold text-white normal-case shadow-[4px_4px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)]"
+        <div class="mb-16 flex flex-col justify-between gap-12 lg:flex-row">
+          <div class="w-full lg:w-3/5">
+            <h2
+              class="mb-6 text-5xl leading-none font-black tracking-tight text-[#FFC000] uppercase md:text-7xl"
             >
-              PrSF
-            </a>
-            <p class="text-xl leading-relaxed italic">
+              Solidarity<br />Forever.
+            </h2>
+            <p class="max-w-sm text-2xl leading-relaxed italic">
               Progressive Students Federation.<br />Educate, Agitate, Organize.
             </p>
           </div>
 
-          <!-- Column 2: Directory / Links -->
-          <div class="flex flex-col items-start gap-4">
-            <h3 class="text-2xl font-black text-[#FFC000] uppercase">
-              Directory
-            </h3>
-            <!-- Brutalist hover effects for the links -->
-            <a
-              href="index.html"
-              class="border-b-2 border-transparent text-xl font-bold uppercase transition-none hover:border-[#FFC000] hover:text-[#FFC000]"
-              >Home</a
-            >
-            <a
-              href="about.html"
-              class="border-b-2 border-transparent text-xl font-bold uppercase transition-none hover:border-[#FFC000] hover:text-[#FFC000]"
-              >About Us</a
-            >
-            <a
-              href="events.html"
-              class="border-b-2 border-transparent text-xl font-bold uppercase transition-none hover:border-[#FFC000] hover:text-[#FFC000]"
-              >Events</a
-            >
-            <a
-              href="resources.html"
-              class="border-b-2 border-transparent text-xl font-bold uppercase transition-none hover:border-[#FFC000] hover:text-[#FFC000]"
-              >Resources</a
-            >
-          </div>
-
-          <!-- Column 3: Contact & Social -->
-          <div class="flex flex-col items-start gap-4">
-            <h3 class="text-2xl font-black text-[#FFC000] uppercase">
-              Connect
-            </h3>
-            <p class="text-xl">Lahore, Pakistan</p>
-
-            <!-- Big chunky social button -->
+          <div
+            class="flex w-full flex-col gap-6 lg:w-2/5 lg:items-end lg:text-right"
+          >
             <a
               href="#"
-              class="mt-2 inline-block border-2 border-black bg-[#FFC000] px-6 py-2 text-xl font-bold text-black uppercase shadow-[4px_4px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)]"
+              class="inline-block border-4 border-black bg-[#FFC000] px-8 py-4 text-center text-3xl font-black text-black uppercase shadow-[6px_6px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[3px_3px_0px_rgba(0,0,0,1)]"
             >
-              Instagram
+              Join the Movement
             </a>
+
+            <div
+              class="mt-2 flex w-full flex-wrap gap-x-6 gap-y-2 border-t-4 border-black pt-4 text-xl font-bold uppercase lg:w-auto lg:justify-end"
+            >
+              <a href="index.html" class="hover:text-[#FFC000]">Home</a>
+              <a href="about.html" class="hover:text-[#FFC000]">About</a>
+              <a href="events.html" class="hover:text-[#FFC000]">Events</a>
+              <a href="resources.html" class="hover:text-[#FFC000]"
+                >Resources</a
+              >
+            </div>
+
+            <p class="text-xl font-bold italic">Lahore, Pakistan</p>
           </div>
         </div>
 
-        <!-- Bottom Copyright / Sign-off -->
         <div
           class="flex flex-col items-center justify-between gap-4 border-t-4 border-black pt-6 text-center md:flex-row md:text-left"
         >
-          <p class="text-lg font-bold uppercase">
-            © 2026 Progressive Students Federation
+          <p class="text-lg font-bold tracking-widest uppercase">
+            No Copyright. Reproduce & Rebel.
           </p>
           <p class="text-lg font-bold text-[#FFC000] italic">
             Power to the Students
